@@ -1,8 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Deepthi Munagapati
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Based on: Jake Gutierrez | https://github.com/sb2nov/resume
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -20,26 +19,12 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -47,27 +32,13 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -75,56 +46,46 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
 \begin{center}
     \textbf{\Huge \scshape Deepthi Munagapati} \\ \vspace{1pt}
-    \small 470-380-2665 $|$ \href{mailto:x@x.com}{\underline{dmunagapati3@gatech.edu}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/deepthimunagapati}} $|$
-    \href{https://github.com/...}{\underline{github.com/dmunagapati}}
+    \small 470-380-2665 $|$ \href{mailto:dmunagapati3@gatech.edu}{\underline{dmunagapati3@gatech.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{U.S. Citizen}} $|$
+    \href{https://github.com/...}{\underline{https://github.com/dmunagapati}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
+
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Bachelor of Science in Computer Science}{May 2027}
+      {Georgia Institute of Technology}{08/2023 -- 05/2027}
+      {\textbf{Bachelors} in Computer Science}{\textbf{GPA}: 4.0}
+    \resumeItemListStart
+      \resumeItem{\textbf{Concentrations}: Artificial Intelligence \& Theory}
+      \resumeItem{\textbf{Relevant Coursework}: Object-Oriented Programming, Data Structures \& Algorithms, Computer Organize \& Program, Objects \& Design, Robotics \& Perception, Intro to AI, Design \& Analysis of Algorithms, Linear Algebra, Second Course in Linear Algebra }
+    \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 
@@ -133,78 +94,80 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineer}{March 2025 -- Present}
-      {Molecular Evolution Core Lab at Georgia Institute of Technology }{Atlanta, GA}
-      \resumeItemListStart
-        \resumeItem{Developing the MECL website using React, Storybook,js, and Node.js}
-        \resumeItem{Building and testing UI components in Storybook.js for modular and scalable development.}
-        \resumeItem{Collaborating with the team to implement design specifications and frontend architecture}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {Automated Algorithm Design Team Member}{Jan. 2025 - Present}
-      {Georgia Institute of Technology}{Atlanta, GA}
-      \resumeItemListStart
-        \resumeItem{Leveraged advanced basis functions and big data processing to evolve human-readable, human-competitive algorithms for optimization tasks}
-        \resumeItem{Developed and tested 50+ machine learning algorithms to balance trade-offs such as false alarm rates and missed detections}
-        \resumeItem{Compared fitness performance metrics between machine learning models, multi-objective genetic programming, and evolutionary multi-objective genetic algorithms}
+      {Gabriel Money}{Atlanta, GA}
+      {\textbf{Machine Learning Intern} (Generative AI + NLP) }{May 2025 - Present}
+    \resumeItemListStart
+      \resumeItem{Developed “Gabi,” a financial chatbot using RAG pipelines; over 100K+ documents}
+      \resumeItem{Boosted chatbot engagement by 34\% via multi-turn dialogue handling and NLP fine-tuning}
+\resumeItem{Implemented AI guardrails using classifiers + Guardrails AI; improved factuality \& coherence by 25\%}
+      \resumeItem{Containerized services with Docker \& deployed via AWS ECS and Terraform; cut deployment time by 40\%}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Diabetic Retinopathy Detection Research}{Jan. 2023 -- Dec. 2024}
-      {Independent Research}{Atlanta, GA}
-      \resumeItemListStart
-        \resumeItem{Developed machine learning model to detect diabetic retinopathy from retinal fundus image}
-        \resumeItem{Utilized image segmentation and classification techniques to analyze medical imaging data, achieving 0.76 accuracy}
-        \resumeItem{Applied deep learning frameworks (TensorFlow/PyTorch), optimized model for performance and accuracy}
-      \resumeItemListEnd
+      {Molecular Evolution Core}{Atlanta, GA}
+      {\textbf{Software Engineer Intern} (BSDP)}{Jan 2025 - Present}
+    \resumeItemListStart
+      \resumeItem{Rebuilt internal lab portal using Figma + React, reducing support tickets by 45\%}
+      \resumeItem{Developed responsive Tailwind components to display real-time bioinformatics data for research staff}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {VIP Program - Automated Algorithm Design}{Atlanta, GA}
+      {\textbf{Machine Learning Researcher}}{Jan 2025 - Present}
+    \resumeItemListStart
+      \resumeItem{Designed a surrogate-assisted NAS pipeline using GNNs and transformer models for object detection}
+      \resumeItem{Reduced architecture search time using evolutionary algorithms + PyTorch; validated results via t-tests \& hypervolume metrics across 50+ trials}
+    \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Stock Market Analysis} $|$ \emph{Python, NumPy, Pandas, Matplotlib, Seaborn, Jupyter}}{March 2025 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed a stock market analysis tool using Python, Pandas, and NumPy, enabling real-time data processing and visualization from Google Finance.}
-            \resumeItem{Implemented predictive modeling techniques, including the Monte Carlo method, to estimate future stock prices and assess risk metrics.}
-            \resumeItem{Designed interactive data visualizations with Matplotlib and Seaborn, facilitating insights into stock trends, moving averages, and volatility}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Backend API for User + Financial Data Management} $|$ \emph{MERN, Vercel, Javascript}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a Node.js and Express.js backend with MongoDB (Mongoose ORM) for user data storage and management}
-            \resumeItem{Built an Aggregated User Information API integrating third-party financial services and deployed using Vercel}
-            \resumeItem{Designed and implemented CRUD operations for user management with MongoDB (Mongoose ORM)}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
 
+     \resumeProjectHeading
+      {\textbf{Sports Betting Arbitrage Bot} $|$ \emph{Python, BeautifulSoup, Multithreading, EC2, Docker}}{April. 2025 -- May. 2025}
+    \resumeItemListStart
+      \resumeItem{Built a bot that identifies 2–4\% profit arbitrage opportunities by scraping odds across 7 betting platforms}
+      \resumeItem{Reduced latency by 70\% using multithreading to parallelize scraping}
+      \resumeItem{Deployed on AWS EC2 via Docker; automated alerts for arbitrage via email notifications}
+    \resumeItemListEnd
 
+    \resumeProjectHeading
+      {\textbf{DevBot: Intelligent Code Assistant} $|$ \emph{Python, OpenAI API, Flask, React}}{Mar. 2025 -- Apr. 2025}
+    \resumeItemListStart
+      \resumeItem{Built a code-aware chatbot for beginner programmers; delivered real-time syntax fixes and logic tips}
+      \resumeItem{Integrated real-time linting and autocompletion with Monaco; supported Python, Java, and C++}
+    \resumeItemListEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
+    \resumeProjectHeading
+      {\textbf{EduMate: Personalized Course Planner} $|$ \emph{Node.js, MongoDB, TypeScript, Next.js}}{Jan. 2025 -- Feb. 2025}
+    \resumeItemListStart
+      \resumeItem{Built full-stack app to generate optimized semester plans using student GPA goals + historical course data}
+      \resumeItem{Designed backend scoring API using linear regression; implemented session handling and auth flow}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
-    }}
- \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \textbf{Languages}{ \textbf{Fluent}: Python, C++, C \textbf{Moderate}: Java, Scala, Swift \textbf{Beginner}: HMTL, CSS} \\
+   \textbf{Frameworks \& Libraries}{: React, Node.js, Flask, Spring Boot, Tailwind CSS, TensorFlow, PyTorch, OpenAI API, FastAPI, Pandas, NumPy} \\
+   \textbf{Tools}{: Git, Docker, Azure, Firebase, Figma, VSCode, MongoDB, SQL, Jupyter Notebook, AWS} \\
+   \textbf{Concepts}{: Retrieval-Augmented Generation (RAG), Kubernetes, Django, CI/CD, Autopilot, Redux, Linux, GPU, Data Solutions} \\
+    \textbf{Awards}{: \textbf{Class Rank}: 5/612, \textbf{SAT}: 1500 (790 Math, 710 EBRW)}
 
+   
+  }}
+\end{itemize}
 
-%-------------------------------------------
+%-----------LEADERSHIP-----------
+\section{Leadership \& Activities}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \textbf{Medical Robotics Club, Data Science Club, RoboJackets, Trading Club, Yellow Jacket Flying Club}}
+\end{itemize}
+
 \end{document}
